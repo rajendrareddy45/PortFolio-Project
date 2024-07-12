@@ -1,0 +1,276 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+.first{
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    margin-bottom: 40px;
+    
+}
+.navbar h1{
+    margin-left: 20px;
+}
+ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+.changing{
+    color:cyan;
+}
+#new{
+    display: none;
+}
+.content>h1{
+    font-weight: bolder;
+    font-size: 30px;
+    color: red;
+}
+ul a{
+    padding: 25px;
+    text-decoration: none;
+}
+ul a li:hover{
+    color: aqua;
+}
+
+.home img{
+    width: 300px;
+    height: 500px;
+    
+}
+.home {
+    width: 90%;
+    margin-left: 7%;
+    height: 90%;
+    display: flex;
+    justify-content: space-around;
+
+}
+.content{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+#con{
+    display: flex;
+}
+#con i:hover{
+   transform: scale(1.2);
+   box-shadow: 0px 0px 5px cyan,0px 0px 12px cyan;
+}
+#con i{
+    padding: 10px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    background-color: black;
+    margin-right: 20px;
+    margin-top: 30px;
+    transition: 0.15s;
+}
+.second{
+    height: 100vh;
+}
+.second img{
+    width:300px;
+    height: 450px;
+}
+.second{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.second .content2{
+    width: 500px;
+}
+.content2 p{
+    margin-bottom: 15px;
+}
+.thirdA{
+    height: 10vh;
+    margin-bottom: 25px;
+}
+.third{
+    width: .5%;
+    margin-left: .80%;
+    height: 10%;
+    display: flex;
+    
+    
+    gap: 20px;
+}
+.third div{
+		
+    box-shadow: rgba(18, 187, 230, 0.2) 0px 8px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+#head{
+    height: 10%;
+    text-align: center;
+    margin-top: 100px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: cyan;
+}
+#A{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: cyan;
+}
+.qualification{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 24px;
+}
+.clgname{
+    color: cyan;
+}
+ #clg{
+    text-align: center !important;
+    
+}
+.heading{
+    color: red;
+}
+.qualification div{
+    box-shadow: rgba(9, 197, 244, 0.2) 0px 8px 24px;
+    width: 30%;
+    height: 250px;
+   display: flex;
+   flex-direction: column;
+   justify-content:center;
+   align-items: center;
+    
+}
+.Qua h1{
+    text-align: center;
+    margin-bottom: 14px;
+}
+.Qua>h1{
+    font-weight: bolder;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: cyan;
+}
+#newimg{
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    margin-top: 100px;
+    box-shadow: 0px 0px 5px cyan,0px 0px 10px cyan,0px 0px 15px cyan;
+    animation: upanddown 4s infinite;
+    animation-timing-function: ease;
+    transition: all .3s;
+ }
+ @keyframes upanddown{
+    0%{
+        transform: translateY(0);  
+    }
+    50%{
+        transform: translateY(-40px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+ }
+ #light{
+    display: none;
+ }
+ #dark{
+    cursor: pointer;
+ }
+ 
+@media all and (min-width:320px) and (max-width:479px){
+   .home{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .home img{
+    margin-left: 60px;
+   }
+   .content{
+    margin-left: 60px;
+    width: 370px;
+   }
+   .second{
+    display: flex;
+    flex-direction: column;
+   }
+   .second img{
+    margin-left: 20px;
+   }
+   .content2{
+    margin-top: -75px;
+    width: 340px;
+    margin-left: 70px;
+    margin-bottom: -50px;
+   }
+   #con{
+    margin-top: -11px;
+    margin-bottom: 10px;
+   }
+   .third{
+    margin-top: -20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 5px;
+   }
+   .navbar ul{
+    display: none;
+   }
+   ul #new{
+    display: block;
+   }
+}
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: flex;
+  clear: both;
+}
+.scroll-container {
+  background-color: #333;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+.scroll-container img {
+  padding: 10px;
+}
+
+
